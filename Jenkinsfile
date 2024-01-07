@@ -26,7 +26,11 @@ node {
        stage('SonarCoverageResults'){
 	
 	sh '''
-	  mvn clean verify sonar:sonar -Dsonar.projectKey=mysonarproject -Dsonar.host.url=http://44.207.3.149:5678 -Dsonar.login=sqp_37b237fc93cce9ff22f7c425b0f777790f99d514
+	  mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=mydynamicapp \
+  -Dsonar.projectName='mydynamicapp' \
+  -Dsonar.host.url=http://3.95.152.220:9000 \
+  -Dsonar.token=sqp_7d2911ba72b0dbc2d00436b69963d0f3ed0fd67f
 	'''
 	
 	
