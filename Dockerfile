@@ -1,4 +1,4 @@
-FROM tomcat:8.0-alpine
+FROM tomcat:9.0.84-jdk8-corretto-al2
 
 MAINTAINER author  author@gmail.com
 
