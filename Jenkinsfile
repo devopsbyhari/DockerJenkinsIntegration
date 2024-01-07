@@ -60,6 +60,7 @@ node {
 	
 	sh '''
 	  docker run -d -p 6666:8080 mannam786/mydynamicapp
+          docker ps
 	  
 
 	'''
