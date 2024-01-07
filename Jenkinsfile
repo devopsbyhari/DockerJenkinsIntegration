@@ -23,7 +23,7 @@ node {
 	
 	
 	}
-       /*stage('SonarCoverageResults'){
+       stage('SonarCoverageResults'){
 	
 	sh '''
 	  mvn clean verify sonar:sonar -Dsonar.projectKey=mysonarproject -Dsonar.host.url=http://44.207.3.149:5678 -Dsonar.login=sqp_37b237fc93cce9ff22f7c425b0f777790f99d514
@@ -31,7 +31,7 @@ node {
 	
 	
 	}
-	stage('SendingToNexus'){
+	/*stage('SendingToNexus'){
 	
 	sh '''
 	  
@@ -56,16 +56,6 @@ node {
 	
 	
 	}
-	stage('Runnning'){
 	
-	sh '''
-	  docker run -d -p 6666:8080 mannam786/mydynamicapp
-          docker ps
-	  
-
-	'''
-	
-	
-	}
    
   }
