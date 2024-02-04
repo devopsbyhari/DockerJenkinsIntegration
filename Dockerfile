@@ -1,8 +1,6 @@
 FROM tomcat:8.0-alpine
 
-MAINTAINER Hari harichowdary.java@gmail.com
-
-
+MAINTAINER nandishpm27@gmail.com
 
 WORKDIR /usr/local/tomcat
 
